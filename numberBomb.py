@@ -6,7 +6,7 @@ import random
 l, r = 1, 100
 flag, isLegal = True, False
 
-bomb = random.randint(l, r)
+bomb = random.randint(l + 1, r - 1)
 
 def clear_screen():
     if os.name == 'nt':
